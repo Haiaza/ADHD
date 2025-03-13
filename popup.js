@@ -14,4 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
         chrome.storage.local.set({ note: notePad.value });
     }, 300));
 
+    // Set alarm
+    setAlarm.addEventListener('click', () => {
+        const alarmTimestamp = new Date(alarmTime.value).getTime(); //grab epoch time // value for comparison
+        const now = Date.now(); //epoch time  // value for comparison 
+
+    })
 })
